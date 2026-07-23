@@ -22,10 +22,11 @@
         <span class="logo__text">СПОКОЙНО</span>
       </a>
       <nav class="nav">
-        <a href="#how" class="nav__link">Как это работает</a>
+        <a href="#how" class="nav__link">Как работает</a>
+        <a href="#for" class="nav__link">Для кого</a>
+        <a href="#tracks" class="nav__link">Что отслеживает</a>
         <a href="#reviews" class="nav__link">Отзывы</a>
-        <a href="#pricing" class="nav__link">Тарифы</a>
-        <a href="#faq" class="nav__link">Вопросы</a>
+        <a href="#faq" class="nav__link">FAQ</a>
       </nav>
       <a href="#order" class="btn btn--header">ОСТАВИТЬ ЗАЯВКУ</a>
       <button class="burger" id="burger" aria-label="Меню">
@@ -62,7 +63,7 @@
     </div>
   </div>
 
-  <!-- HERO -->
+  <!-- HERO (mobile landing page) -->
   <section class="hero">
     <div class="container hero__grid">
       <div class="hero__left">
@@ -103,7 +104,6 @@
       <h2 class="section-h2">ОТ ЗАКАЗА ДО ПОЛНОГО СПОКОЙСТВИЯ</h2>
       <div class="steps">
 
-        <!-- Шаг 1 -->
         <div class="step-card">
           <span class="pill">Шаг 1</span>
           <h3 class="step-card__h3">Оформление заказа</h3>
@@ -116,7 +116,6 @@
           </ul>
         </div>
 
-        <!-- Шаг 2 -->
         <div class="step-card">
           <span class="pill">Шаг 2</span>
           <h3 class="step-card__h3">Доставка и настройка</h3>
@@ -133,7 +132,6 @@
           </div>
         </div>
 
-        <!-- Шаг 3 -->
         <div class="step-card">
           <span class="pill">Шаг 3</span>
           <h3 class="step-card__h3">Использование браслета родственником</h3>
@@ -151,7 +149,6 @@
 
       </div>
 
-      <!-- Шаг 4 -->
       <div class="steps steps--wide">
         <div class="step-card step-card--wide">
           <span class="pill">Шаг 4</span>
@@ -165,7 +162,6 @@
         </div>
       </div>
 
-      <!-- Шаг 5 -->
       <div class="steps steps--wide">
         <div class="step-card step-card--wide">
           <span class="pill">Шаг 5</span>
@@ -208,7 +204,7 @@
   <!-- ORDER FORM -->
   <section class="order-section" id="order">
     <div class="container">
-      <h2 class="section-h2">ВСЕГО 3 ШАГА, ЧТОБЫ ОФОРМИТЬ 30-ДНЕВНЫЙ ТЕСТ СЕРВИСА СПОКОЙНО</h2>
+      <h2 class="section-h2 section-h2--left">ВСЕГО 3 ШАГА, ЧТОБЫ ОФОРМИТЬ 30-ДНЕВНЫЙ ТЕСТ СЕРВИСА SPOKOINO</h2>
 
       <div class="order-steps">
 
@@ -228,15 +224,15 @@
           <span class="pill">Шаг 2 из 3</span>
           <h3 class="order-step__h3">Выберите цвет</h3>
           <div class="order-product">
-            <div class="order-product__img"><img src="images/step3.png" alt="Браслет"></div>
+            <div class="order-product__img"><img src="images/bracelet.jpg" alt="Браслет"></div>
             <div class="order-product__info">
               <h4>Браслет Spokoyno White</h4>
               <p class="order-product__desc">Чёрный, 1 шт</p>
               <div class="order-product__price">4500 ₽</div>
               <div class="swatches">
-                <button class="swatch swatch--on" style="background:#1A1A1A" aria-label="Чёрный"></button>
+                <button class="swatch swatch--on" style="background:#00BFA5" aria-label="Бирюзовый"></button>
                 <button class="swatch" style="background:#D4C5A0" aria-label="Бежевый"></button>
-                <button class="swatch" style="background:#4CAF50" aria-label="Зелёный"></button>
+                <button class="swatch" style="background:#5A5A5A" aria-label="Тёмно-серый"></button>
               </div>
             </div>
           </div>
@@ -320,7 +316,7 @@
               <div class="contact-methods">
                 <button class="contact-btn contact-btn--active">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3" fill="#9C27B0"/><text x="9" y="12" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">M</text></svg>
-                  Мегафон
+                  Мax
                 </button>
                 <button class="contact-btn">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3" fill="#25D366"/><text x="9" y="12" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">W</text></svg>
@@ -341,7 +337,7 @@
               <input type="email" class="input" placeholder="email@mail.ru">
             </div>
           </div>
-          <p class="consent">Нажимая кнопку, вы соглашаетесь с офертой и политикой конфиденциальности</p>
+          <p class="consent">Нажимая кнопку, вы соглашаетесь с <a href="#">офертой</a> и <a href="#">политикой конфиденциальности</a></p>
           <button class="btn btn--primary btn--full">ОТПРАВИТЬ</button>
         </div>
 
@@ -350,52 +346,21 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer footer--dark">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="#" class="logo logo--sm">
-            <svg class="logo__icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#00BFA5"/>
-              <path d="M16 8C12 8 9 11.5 9 15.5C9 20 12 24 16 24C20 24 23 20 23 15.5C23 11.5 20 8 16 8Z" fill="#fff"/>
-            </svg>
-            <span class="logo__text">СПОКОЙНО</span>
-          </a>
-          <p class="footer__desc">Умный трекер здоровья для пожилых людей. Помогаем вам знать, что с близким всё хорошо.</p>
-          <div class="footer__contacts">
-            <a href="tel:88001234567">8 800 123-45-67</a>
-            <a href="mailto:info@spokoyno.ru">info@spokoyno.ru</a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h4>Продукт</h4>
-          <a href="#">О браслете</a>
-          <a href="#">Как это работает</a>
-          <a href="#">Тарифы</a>
-          <a href="#">Доставка</a>
-        </div>
-        <div class="footer__col">
-          <h4>Поддержка</h4>
-          <a href="#">Частые вопросы</a>
-          <a href="#">Связаться с нами</a>
-          <a href="#">Возврат</a>
-        </div>
-        <div class="footer__col">
-          <h4>Компания</h4>
-          <a href="#">О нас</a>
-          <a href="#">Блог</a>
-          <a href="#">Вакансии</a>
-        </div>
-        <div class="footer__social">
-          <a href="#" aria-label="VK"><svg width="20" height="20" viewBox="0 0 24 24" fill="#666"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.596-.188 1.362 1.259 2.174 1.814.613.42 1.08.328 1.08.328l2.172-.03s1.136-.07.598-.964c-.044-.073-.314-.66-1.618-1.866-1.366-1.266-1.182-1.06.462-3.246.999-1.33 1.398-2.142 1.274-2.49-.117-.328-.84-.242-.84-.242l-2.446.015s-.182-.025-.316.056c-.13.078-.214.26-.214.26s-.384 1.022-.896 1.886c-1.082 1.832-1.516 1.93-1.694 1.818-.412-.262-.308-1.053-.308-1.618 0-1.76.267-2.497-.52-2.687-.263-.064-.456-.107-1.127-.114-.862-.008-1.588.003-1.996.204-.275.135-.486.437-.357.455.16.022.523.098.715.362.249.342.24 1.112.24 1.112s.145 2.126-.334 2.392c-.328.182-.777-.19-1.74-1.906-.493-.878-.867-1.85-.867-1.85s-.072-.176-.2-.27c-.155-.114-.372-.15-.372-.15l-2.32.015s-.348.01-.476.161c-.114.135-.01.413-.01.413s1.82 4.256 3.882 6.401c1.89 1.96 4.04 1.832 4.04 1.832h.976z"/></svg></a>
-          <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="#666"><path d="M21.198 3.08L2.32 10.72c-1.2.5-1.19 1.15-.22 1.45l4.84 1.51 1.87 5.81c.23.66.12.93.8.93.5 0 .72-.23 1-.51l2.66-2.56 5.56 4.11c1.02.56 1.75.27 2-.94l3.62-17c.37-1.56-.58-2.26-1.65-1.74zM8.58 13.32l11.2-6.97c.32-.2.62-.09.38.13l-9.17 8.27-.34 3.63-2.07-5.06z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>© 2024 Спокойно. Все права защищены.</span>
-        <div class="footer__bottom-links">
-          <a href="#">Политика конфиденциальности</a>
-          <a href="#">Оферта</a>
+      <div class="footer__inner">
+        <a href="#" class="logo logo--footer">
+          <svg class="logo__icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="16" fill="#00BFA5"/>
+            <path d="M16 8C12 8 9 11.5 9 15.5C9 20 12 24 16 24C20 24 23 20 23 15.5C23 11.5 20 8 16 8Z" fill="#fff"/>
+          </svg>
+          <span class="logo__text logo__text--light">СПОКОЙНО</span>
+        </a>
+        <div class="footer__socials">
+          <a href="#" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="#888" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="#888" stroke-width="1.5"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="#888"><path d="M21.198 3.08L2.32 10.72c-1.2.5-1.19 1.15-.22 1.45l4.84 1.51 1.87 5.81c.23.66.12.93.8.93.5 0 .72-.23 1-.51l2.66-2.56 5.56 4.11c1.02.56 1.75.27 2-.94l3.62-17c.37-1.56-.58-2.26-1.65-1.74zM8.58 13.32l11.2-6.97c.32-.2.62-.09.38.13l-9.17 8.27-.34 3.63-2.07-5.06z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#888" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="#888" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#888"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="#888"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg></a>
         </div>
       </div>
     </div>
