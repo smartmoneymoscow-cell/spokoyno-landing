@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#f8f8f8" rx="16"/>
+  <!-- Bracelet band -->
+  <path d="M100 150 Q100 80 150 70 Q200 60 200 150" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+  <path d="M100 150 Q100 80 150 70 Q200 60 200 150" fill="none" stroke="#e0e0e0" stroke-width="20" stroke-linecap="round"/>
+  <!-- Main body -->
+  <rect x="120" y="60" width="60" height="35" rx="10" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="128" y="66" width="44" height="23" rx="4" fill="#2DD4A8"/>
+  <!-- Heart icon on screen -->
+  <path d="M145 76 L142 73 Q139 70 142 69 Q145 68 145 71 Q145 68 148 69 Q151 70 148 73 Z" fill="white"/>
+  <text x="150" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#6B7280">Spokoyno</text>
+  <!-- Lower band -->
+  <path d="M100 150 Q100 220 150 230 Q200 240 200 150" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+  <path d="M100 150 Q100 220 150 230 Q200 240 200 150" fill="none" stroke="#e0e0e0" stroke-width="20" stroke-linecap="round"/>
+  <!-- Button -->
+  <circle cx="200" cy="77" r="4" fill="#d0d0d0"/>
+</svg>

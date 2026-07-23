@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0ff"/>
+      <stop offset="100%" style="stop-color:#e8e0f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2)"/>
+  <!-- Box -->
+  <rect x="180" y="100" width="240" height="180" rx="8" fill="#c9a96e"/>
+  <rect x="180" y="100" width="240" height="30" rx="8" fill="#b8944e"/>
+  <rect x="280" y="100" width="40" height="180" fill="#b8944e" opacity="0.3"/>
+  <line x1="180" y1="190" x2="420" y2="190" stroke="#b8944e" stroke-width="2"/>
+  <!-- Box lid open -->
+  <rect x="170" y="70" width="260" height="35" rx="6" fill="#d4b678" transform="rotate(-5 300 87)"/>
+  <!-- Bracelet in box -->
+  <ellipse cx="300" cy="170" rx="40" ry="15" fill="none" stroke="white" stroke-width="6"/>
+  <circle cx="300" cy="170" r="8" fill="#2DD4A8"/>
+  <!-- Hand receiving -->
+  <circle cx="450" cy="230" r="30" fill="#f5d0a9"/>
+  <rect x="440" y="190" width="20" height="45" rx="10" fill="#f5d0a9"/>
+  <!-- Delivery person silhouette -->
+  <circle cx="100" cy="180" r="30" fill="#6B7280" opacity="0.3"/>
+  <rect x="75" y="220" width="50" height="80" rx="10" fill="#6B7280" opacity="0.3"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#6B7280" opacity="0.6">Доставка и настройка</text>
+</svg>
