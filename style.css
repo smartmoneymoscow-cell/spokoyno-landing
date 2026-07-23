@@ -139,7 +139,7 @@ s{text-decoration:line-through;color:#888}
 /* DESKTOP: only checkout  */
 /* ====================== */
 @media(min-width:769px){
-  .hero,.how,.quiz{display:none}
+  .how,.quiz{display:none}
   .burger{display:none}
   .mobile-menu{display:none}
   .nav{display:flex}
@@ -147,6 +147,8 @@ s{text-decoration:line-through;color:#888}
   .container{max-width:700px}
   body{padding:0 40px}
   .header .container{max-width:1200px}
+  .hero .container{max-width:900px}
+  .hero__img{max-width:600px}
   .order{max-width:700px;margin:0 auto}
   .footer{max-width:700px;margin:16px auto 0;border-radius:16px}
 }
