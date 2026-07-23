@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0faf7"/>
+      <stop offset="100%" style="stop-color:#d8f5e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg3)"/>
+  <!-- Wrist with bracelet -->
+  <ellipse cx="300" cy="200" rx="80" ry="50" fill="#f5d0a9"/>
+  <!-- Bracelet on wrist -->
+  <ellipse cx="300" cy="185" rx="55" ry="20" fill="none" stroke="white" stroke-width="10"/>
+  <ellipse cx="300" cy="185" rx="55" ry="20" fill="none" stroke="#2DD4A8" stroke-width="6"/>
+  <rect x="280" y="172" width="40" height="26" rx="6" fill="#2DD4A8"/>
+  <circle cx="300" cy="185" r="4" fill="white"/>
+  <!-- Pulse lines -->
+  <path d="M250 140 L270 140 L275 120 L285 160 L290 130 L295 150 L300 140 L320 140" fill="none" stroke="#2DD4A8" stroke-width="2" opacity="0.6"/>
+  <!-- Phone showing app -->
+  <rect x="420" y="100" width="120" height="210" rx="16" fill="#1a1a1a"/>
+  <rect x="428" y="115" width="104" height="180" rx="8" fill="white"/>
+  <!-- App header -->
+  <rect x="428" y="115" width="104" height="30" fill="#2DD4A8"/>
+  <text x="480" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white" font-weight="600">СПОКОЙНО</text>
+  <!-- Heart rate -->
+  <text x="480" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#1a1a1a" font-weight="700">72</text>
+  <text x="480" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#6B7280">уд/мин</text>
+  <!-- Chart line -->
+  <polyline points="440,210 455,200 470,215 485,195 500,205 515,198" fill="none" stroke="#2DD4A8" stroke-width="2"/>
+  <!-- Status dot -->
+  <circle cx="450" y="250" cy="250" r="5" fill="#2DD4A8"/>
+  <text x="465" y="254" font-family="Inter, sans-serif" font-size="10" fill="#2DD4A8">Всё хорошо</text>
+  <!-- Notification bell -->
+  <text x="300" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#6B7280" opacity="0.6">Мониторинг 24/7</text>
+</svg>
