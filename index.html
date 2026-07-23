@@ -4,127 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>СПОКОЙНО</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:#fff}
+    .screen{display:block;width:100%;height:auto}
+    .screens{display:flex;flex-direction:column}
+    .desktop-only{display:none}
+    .mobile-only{display:block}
+    @media(min-width:769px){
+      .mobile-only{display:none}
+      .desktop-only{display:block}
+      .screens{flex-direction:row;flex-wrap:wrap;justify-content:center}
+      .screen{width:auto;height:100vh;margin:0 8px}
+    }
+  </style>
 </head>
 <body>
-
-<header class="header">
-  <div class="wrap header__row">
-    <a href="#" class="logo">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#33B8AC"/><path d="M16 8C12 8 9 11.5 9 15.5C9 20 12 24 16 24C20 24 23 20 23 15.5C23 11.5 20 8 16 8Z" fill="#fff"/></svg>
-      <span>СПОКОЙНО</span>
-    </a>
-    <nav class="nav">
-      <a href="#">Как работает</a>
-      <a href="#">Для кого</a>
-      <a href="#">Что отслеживает</a>
-      <a href="#">Отзывы</a>
-      <a href="#">FAQ</a>
-    </nav>
-    <a href="#order" class="btn btn--accent btn--sm">ОСТАВИТЬ ЗАЯВКУ</a>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<div class="mm" id="mm">
-  <div class="mm__head">
-    <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#33B8AC"/><path d="M16 8C12 8 9 11.5 9 15.5C9 20 12 24 16 24C20 24 23 20 23 15.5C23 11.5 20 8 16 8Z" fill="#fff"/></svg>
-    <span>СПОКОЙНО</span>
-    <button id="mmClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 4L20 20M20 4L4 20"/></svg></button>
-  </div>
-  <nav>
-    <a href="#">О браслете</a>
-    <a href="#">Как это работает</a>
-    <a href="#">Умный скоринг</a>
-    <a href="#">Как выглядит приложение</a>
-    <a href="#">Как меняется жизнь</a>
-    <a href="#">Отзывы</a>
-    <a href="#">Тарифы</a>
-    <a href="#">Частые вопросы</a>
-  </nav>
-  <a href="#order" class="btn btn--accent btn--full">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero__grid">
-    <div class="hero__text">
-      <p class="hero__eyebrow">Умный трекер здоровья для пожилых людей — помогает знать что с близким все хорошо.</p>
-      <h1>УМНЫЙ ТРЕКЕР ЗДОРОВЬЯ ДЛЯ ВОЗРАСТНЫХ ЛЮДЕЙ</h1>
-      <p class="hero__sub">- ПОМОГАЕТ ЗНАТЬ ЧТО С БЛИЗКИМ ВСЕ ХОРОШО</p>
-      <p class="hero__desc">Родственник носит браслет, вы видите статус. При SOS или падении — мгновенное уведомление.</p>
-      <div class="checks">
-        <div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Три месяца подписки — бесплатно</div>
-        <div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Без автоматического списания</div>
-        <div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Не понравилось за 30 дней? Вернем деньги</div>
-      </div>
-      <div class="hero__btns">
-        <a href="#order" class="btn btn--accent btn--lg"><span>КУПИТЬ БРАСЛЕТ</span><span class="btn__sub">+3 месяца подписки бесплатно</span><span class="btn__price">4500 Р</span></a>
-        <a href="#quiz" class="btn btn--outline btn--lg"><span>ПОДОЙДЕТ ЛИ БРАСЛЕТ?</span><span class="btn__sub">Пройти опрос за 1 минуту</span></a>
-      </div>
+  <div class="screens">
+    <div class="mobile-only">
+      <img class="screen" src="screens/s2_landing.png" alt="">
+      <img class="screen" src="screens/s3_order1.png" alt="">
+      <img class="screen" src="screens/s4_order2.png" alt="">
+      <img class="screen" src="screens/s5_order3.png" alt="">
     </div>
-    <div class="hero__photo">
-      <img src="images/hero.png" alt="">
-      <div class="hero__badges">
-        <span class="badge">Активность</span>
-        <span class="badge">SOS-кнопка</span>
-        <span class="badge">Качество сна</span>
-      </div>
+    <div class="desktop-only">
+      <img class="screen" src="screens/d1_desktop1.png" alt="">
+      <img class="screen" src="screens/d2_desktop2.png" alt="">
+      <img class="screen" src="screens/d3_desktop3.png" alt="">
+      <img class="screen" src="screens/d4_desktop4.png" alt="">
     </div>
   </div>
-</section>
-
-<!-- HOW -->
-<section class="how">
-  <div class="wrap">
-    <h2 class="section-title">ОТ ЗАКАЗА ДО ПОЛНОГО СПОКОЙСТВИЯ</h2>
-    <div class="steps">
-      <div class="step"><span class="pill">Шаг 1</span><h3>Оформление заказа</h3><div class="step__img"><img src="images/step1.png" alt=""></div><p>Закажите браслет за пару минут и обретите спокойствие:</p><div class="checks"><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Выберите цвет браслета</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Оплатите удобным способом</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Укажите адрес доставки — привезем в любую точку России</div></div></div>
-      <div class="step"><span class="pill">Шаг 2</span><h3>Доставка и настройка</h3><div class="step__img"><img src="images/step2.png" alt=""></div><p>Вы можете быть спокойны — мы всё сделаем сами:</p><div class="checks"><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Доставим браслет прямо домой</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Всё подключим и настроим</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Вовлекаем родственника в процесс: объясним простым языком</div></div><div class="step__pills"><span class="pill pill--sm">95% хотят использовать браслет</span><span class="pill pill--sm">Не понравится — вернем деньги</span></div></div>
-      <div class="step"><span class="pill">Шаг 3</span><h3>Использование браслета родственником</h3><div class="step__img"><img src="images/step3.png" alt=""></div><div class="checks"><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>У родственника своё приложение, где всё отображается наглядно</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Игровая механика помогает сформировать полезные привычки</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Пожилые люди начинают следить за своими показателями</div></div><div class="step__pills"><span class="pill pill--sm">&gt;87% ежедневно заходят в приложение</span><span class="pill pill--sm">&gt;70% улучшили показатели активности</span></div></div>
-      <div class="step"><span class="pill">Шаг 4</span><h3>Приложение для Вас</h3><div class="step__img"><img src="images/step4.png" alt=""></div><p>Вы видите показатели здоровья в режиме реального времени. Отчеты показывают динамику изменений показателей здоровья. Вы сможете вовремя отреагировать при ухудшении показателей. Вы получите уведомление в случае падения или нажатия кнопки SOS.</p></div>
-      <div class="step"><span class="pill">Шаг 5</span><h3>Спокойно всем</h3><div class="step__img"><img src="images/step5.png" alt=""></div><div class="checks"><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Пожилой человек чувствует вашу заботу</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>У пожилого родственника появляется интерес к жизни</div><div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Вы спокойны, зная о здоровье близкого</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- QUIZ -->
-<section class="quiz" id="quiz">
-  <div class="wrap">
-    <h2>Сомневаетесь?</h2>
-    <p>Поможем понять, подойдет ли браслет вашему родственнику.</p>
-    <div class="checks">
-      <div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Короткий опрос — всего 1 минута</div>
-      <div class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#33B8AC" stroke-width="2" stroke-linecap="round"/></svg>Возникнут вопросы — менеджер проконсультирует вас</div>
-    </div>
-    <a href="#" class="btn btn--accent btn--lg btn--full" style="margin-top:16px"><span>ПОДОЙДЕТ ЛИ БРАСЛЕТ?</span><span class="btn__sub">Пройти опрос за 1 минуту</span></a>
-  </div>
-</section>
-
-<!-- ORDER -->
-<section class="order" id="order">
-  <div class="wrap">
-    <h2 class="order__title">ВСЕГО 3 ШАГА, ЧТОБЫ ОФОРМИТЬ 30-ДНЕВНЫЙ ТЕСТ СЕРВИСА SPOKOINO</h2>
-    <div class="ocard"><span class="pill">Шаг 1 из 3</span><h3>Введите номер телефона</h3><div class="input-wrap"><span class="iflag">🇷🇺</span><input type="tel" class="input" placeholder="+7 (___) ___-__-__"></div><button class="btn btn--accent btn--full">СЛЕДУЮЩИЙ ШАГ</button></div>
-    <div class="ocard"><span class="pill">Шаг 2 из 3</span><h3>Выберите цвет</h3><div class="prod"><div class="prod__img"><img src="images/step3.png" alt=""></div><div><h4>Браслет Spokoyno White</h4><p class="prod__desc">Чёрный, 1 шт</p><div class="prod__price">4500 ₽</div><div class="swatches"><button class="sw sw--on" style="background:#33B8AC"></button><button class="sw" style="background:#D4C5A0"></button><button class="sw" style="background:#5A5A5A"></button></div></div></div><div class="sline"><div class="sline__l"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L3 5v4c0 4.4 3 8.5 7 9.5 4-1 7-5.1 7-9.5V5L10 2z" fill="#33B8AC"/><path d="M10 6C8.5 6 7 7.5 7 9C7 11 8.5 13 10 13C11.5 13 13 11 13 9C13 7.5 11.5 6 10 6Z" fill="#fff"/></svg><div><strong>Подписка Spokoyno</strong><small class="sline__hint">Первые три месяца - бесплатно!</small></div></div><div class="sline__r"><s>390 ₽</s><span class="free">0 ₽</span></div></div><div class="promo"><input type="text" class="input input--sm" placeholder="Промо-код"><button class="btn btn--promo">Применить</button></div><div class="total"><span>ИТОГО:</span><span class="total__v">4 500 ₽</span></div><h3 style="margin-top:16px">Выберите способ оплаты</h3><div class="pays"><label class="pay"><input type="radio" name="pay" checked><span><strong>СБП (QR или по номеру)</strong><br><small>Мгновенно, без комиссии</small></span></label><label class="pay"><input type="radio" name="pay"><span><strong>Банковская карта</strong><br><small>Мир, Visa, Mastercard</small></span></label><label class="pay"><input type="radio" name="pay"><span><strong>Оплата при получении</strong><br><small>Оплатите курьеру или на почте</small></span></label></div><div class="guars"><span class="guar"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><rect x="2" y="8" width="16" height="8" rx="2" fill="#33B8AC"/><path d="M6 8V6a4 4 0 018 0v2" stroke="#33B8AC" stroke-width="1.5" fill="none"/></svg>Бесплатная доставка</span><span class="guar"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2L3 5v4c0 4.4 3 8.5 7 9.5 4-1 7-5.1 7-9.5V5L10 2z" fill="#33B8AC"/><path d="M7 10l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>Если передумаете, вернем деньги</span></div><button class="btn btn--accent btn--full">СЛЕДУЮЩИЙ ШАГ</button></div>
-    <div class="ocard"><span class="pill">Шаг 3 из 3</span><h3>Укажите детали доставки</h3><div class="fields"><div class="fld"><label>Имя получателя</label><input type="text" class="input" placeholder="Как к вам обращаться"></div><div class="fld"><label>Город</label><input type="text" class="input" placeholder="Москва"></div><div class="fld"><label>Адрес (улица, дом, квартира)</label><input type="text" class="input" placeholder="ул. Ленина, дом 10, квартира 5"></div><div class="fld"><label>Удобный способ связи</label><div class="cbts"><button class="cbt cbt--on">Мax</button><button class="cbt">WhatsApp</button><button class="cbt">Telegram</button><button class="cbt">Звонок</button></div></div><div class="fld"><label>Электронная почта для чека (необязательно)</label><input type="email" class="input" placeholder="email@mail.ru"></div></div><p class="legal">Нажимая кнопку, вы соглашаетесь с <a href="#">офертой</a> и <a href="#">политикой конфиденциальности</a></p><button class="btn btn--accent btn--full">ОТПРАВИТЬ</button></div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="wrap footer__row">
-    <a href="#" class="logo logo--ft"><svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#33B8AC"/><path d="M16 8C12 8 9 11.5 9 15.5C9 20 12 24 16 24C20 24 23 20 23 15.5C23 11.5 20 8 16 8Z" fill="#fff"/></svg><span>СПОКОЙНО</span></a>
-    <div class="socials"><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="#888" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="#888" stroke-width="1.5"/></svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="#888"><path d="M21.198 3.08L2.32 10.72c-1.2.5-1.19 1.15-.22 1.45l4.84 1.51 1.87 5.81c.23.66.12.93.8.93.5 0 .72-.23 1-.51l2.66-2.56 5.56 4.11c1.02.56 1.75.27 2-.94l3.62-17c.37-1.56-.58-2.26-1.65-1.74zM8.58 13.32l11.2-6.97c.32-.2.62-.09.38.13l-9.17 8.27-.34 3.63-2.07-5.06z"/></svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#888" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="#888" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#888"/></svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="#888"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg></a></div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('burger').onclick=()=>{document.getElementById('mm').classList.add('on');document.body.style.overflow='hidden'};
-document.getElementById('mmClose').onclick=()=>{document.getElementById('mm').classList.remove('on');document.body.style.overflow=''};
-document.querySelectorAll('.mm nav a').forEach(a=>a.onclick=()=>{document.getElementById('mm').classList.remove('on');document.body.style.overflow=''});
-</script>
 </body>
 </html>
