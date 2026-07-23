@@ -122,11 +122,12 @@ s{text-decoration:line-through;color:#888}
   .how,.quiz{display:none}
   .burger{display:none}.mm{display:none}
   .nav{display:flex}.btn--sm{display:inline-flex}
-  .container{max-width:700px}
   body{padding:0 40px}
   .header .container{max-width:1200px}
-  .hero .container{max-width:900px}
-  .hero__img{max-width:600px}
+  .hero .container{max-width:1200px;display:flex;flex-direction:row-reverse;gap:48px;align-items:center}
+  .hero__img{max-width:500px;flex-shrink:0}
+  .hero__content{flex:1}
+  .container{max-width:700px}
   .order{max-width:700px;margin:0 auto}
   .footer{max-width:700px;margin:16px auto 0}
 }
